@@ -1,13 +1,12 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: backend-replicaset
 spec:
   replicas: 2
   selector:
-    matchlabels:
+    matchLabels:
       app: backend
-  
   template:
     metadata:
       labels:
